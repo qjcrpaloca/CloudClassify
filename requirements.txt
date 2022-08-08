@@ -1,3 +1,3 @@
-py -m pip freeze > requirements.txt
-py -m pip install -r requirements.txt
-python -m pip install fastai
+py pip freeze > requirements.txt
+py pip install -r requirements.txt
+fastai
