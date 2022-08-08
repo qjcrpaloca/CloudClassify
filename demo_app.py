@@ -3,12 +3,12 @@ from fastai.vision.widgets import *
 from fastai.vision.all import *
 
 import pathlib
-pathlib.PosixPath = pathlib.WindowsPath
+#pathlib.PosixPath = pathlib.WindowsPath
 import streamlit as st
 
 class Predict:
     def __init__(self, filename):
-        self.learn_inference = load_learner(pathlib.PosixPath()/filename)
+        self.learn_inference = load_learner(Path()/filename)
         self.img = self.get_image_from_upload()
         if self.img is not None:
             self.display_output()
