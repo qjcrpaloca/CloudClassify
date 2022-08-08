@@ -29,7 +29,7 @@ class Predict:
 
     def get_prediction(self):
 
-        if st.button('Classify'):
+        if st.button('Click the button to Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.write(f'Prediction: {pred}; Probability: {probs[pred_idx]*100:.02f} %')
         else: 
@@ -40,8 +40,10 @@ if __name__=='__main__':
     resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
     predictor_resnet = Predict(resnet_model)
 
+if __name__=='__main__':
     vgg_model = 'CloudClassification_vgg16_v2.pkl'
     predictor_vgg16 = Predict(vgg_model)
     
+if __name__=='__main__':
     mobilenet_model = 'CloudClassification_mobilenetv3_v1.pkl'
     predictor_mobilenet = Predict(mobilenet_model)
