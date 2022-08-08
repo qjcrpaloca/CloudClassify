@@ -1,1 +1,1 @@
-fastai
+py -m pip install fastai
