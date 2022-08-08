@@ -6,6 +6,10 @@ import pathlib
 #pathlib.PosixPath = pathlib.WindowsPath
 import streamlit as st
 
+image1 = Image.open('header.jpg')
+st.slidebar.image('header.jpg')
+st.header('Clouds Classification Demonstrate')
+
 class Predict:
     def __init__(self, filename):
         self.learn_inference = load_learner(Path()/filename)
@@ -16,7 +20,7 @@ class Predict:
     
     @staticmethod
     def get_image_from_upload():
-        uploaded_file = st.file_uploader("Upload Files",type=['png','jpeg', 'jpg'])
+        uploaded_file = st.file_uploader("Upload Cloud Image",type=['png','jpeg', 'jpg'])
         if uploaded_file is not None:
             return PILImage.create((uploaded_file))
         return None
