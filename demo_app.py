@@ -37,6 +37,11 @@ class Predict:
 
 if __name__=='__main__':
 
-    file_name='CloudClassification_resnet50_v1 (1).pkl'
+    resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
+    predictor_resnet = Predict(resnet_model)
 
-    predictor = Predict(file_name)
+    vgg_model = 'CloudClassification_vgg16_v2.pkl'
+    predictor_vgg16 = Predict(vgg_model)
+    
+    mobilenet_model = 'CloudClassification_mobilenetv3_v1.pkl'
+    predictor_mobilenet = Predict(mobilenet_model)
