@@ -28,7 +28,7 @@ class Predict:
 
         if st.button('Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
-            st.write(f'Prediction: {pred}; Probability: {probs[pred_idx]:.04f}')
+            st.write(f'Prediction: {pred}; Probability: {probs[pred_idx]*100:.02f}')
         else: 
             st.write(f'Click the button to classify') 
 
