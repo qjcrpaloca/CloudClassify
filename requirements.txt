@@ -1,1 +1,1 @@
-pip install fastai
+fastai>=2.7.9
