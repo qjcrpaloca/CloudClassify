@@ -6,7 +6,7 @@ import pathlib
 #pathlib.PosixPath = pathlib.WindowsPath
 import streamlit as st
 
-st.image('header.jpg')
+st.image('header2.jpg')
 st.header('Clouds Classification Demonstrate')
 
 class Predict:
