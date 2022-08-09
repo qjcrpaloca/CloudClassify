@@ -40,6 +40,6 @@ if __name__=='__main__':
     resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
     predictor_resnet = Predict(resnet_model)
 
-st.text('[**developers**] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
-st.text('[**advisers**] Songkran Buttawong, Suthut Butchanon')
+st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
+st.text('[advisers] Songkran Buttawong, Suthut Butchanon')
 
