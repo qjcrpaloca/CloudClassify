@@ -41,6 +41,6 @@ if __name__=='__main__':
     predictor_resnet = Predict(resnet_model)
 st.text('Credit')
 st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
-st.text('[advisers] Songkran Buttawong, Suthut Butchanon')
+st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
 st.text('A Capstone Project, Princess Chulabhorn Science High School Loei')
 
