@@ -29,7 +29,7 @@ class Predict:
 
     def get_prediction(self):
 
-        if st.button('Click the button to Classify'):
+        if st.button('Click here to Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.subheader(f'Prediction: {pred}; Probability: {probs[pred_idx]*100:.02f} %')
         #else: 
