@@ -41,5 +41,5 @@ if __name__=='__main__':
     predictor_resnet = Predict(resnet_model)
 
 
-st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
-st.text('[advisers] Songkran Buttawong, Suthut Butchanon')
+st.cartion('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
+st.caption('[advisers] Songkran Buttawong, Suthut Butchanon')
