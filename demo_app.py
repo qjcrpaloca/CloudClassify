@@ -41,4 +41,4 @@ if __name__=='__main__':
     predictor_resnet = Predict(resnet_model)
 
 
-st.markdown('[**developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn [**advisers] Songkran Buttawong, Suthut Butchanon')
+st.markdown('[**developers**] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn [**advisers**] Songkran Buttawong, Suthut Butchanon')
