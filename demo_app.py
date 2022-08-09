@@ -39,3 +39,8 @@ if __name__=='__main__':
 
     resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
     predictor_resnet = Predict(resnet_model)
+
+my_team = st.beta_expander(label='Team members')
+with my_expander:
+    '[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn'
+    '[advisers] Songkran Buttawong, Suthut Butchanon'
