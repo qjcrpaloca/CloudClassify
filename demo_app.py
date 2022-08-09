@@ -40,7 +40,7 @@ if __name__=='__main__':
     resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
     predictor_resnet = Predict(resnet_model)
 
-html_string = ('<h6><b>[developers]<\b> Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn<\h6>'
-               '<h6><b>[advisers]<\b> Songkran Buttawong, Suthut Butchanon<\h6>')
+html_string = ('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn'
+               '[advisers] Songkran Buttawong, Suthut Butchanon')
 
 st.markdown(html_string, unsafe_allow_html=True)
