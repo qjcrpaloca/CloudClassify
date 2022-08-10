@@ -39,6 +39,8 @@ if __name__=='__main__':
 
     resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
     predictor_resnet = Predict(resnet_model)
+
+st.text('      ')
 st.text('Credit')
 st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
 st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
