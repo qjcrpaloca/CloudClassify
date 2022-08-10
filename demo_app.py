@@ -32,7 +32,7 @@ class Predict:
         if st.button('Click here to Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.subheader(f'Prediction: {pred} with Confidence: {probs[pred_idx]*100:.02f}%')
-            st.write(f'ผลการทำนาย: {pred} ด้วยความมั่นใจ: {probs[pred_idx]*100:.02f}%')
+            st.text(f'ผลการทำนาย: {pred} ด้วยความมั่นใจ: {probs[pred_idx]*100:.02f}%')
         #else: 
            # st.write(f'Click the button to classify') 
 
