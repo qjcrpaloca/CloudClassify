@@ -41,6 +41,8 @@ if __name__=='__main__':
     predictor_resnet = Predict(resnet_model)
 
 st.text('      ')
+st.text('      ')
+st.text('      ')
 st.text('Credit')
 st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
 st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
