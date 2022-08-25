@@ -35,11 +35,9 @@ class Predict:
 
         if st.button('Click here! to Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
-            st.write(f'Prediction: ')
-            st.subheader(pred)
-            st.write(f'with Confidence: {probs[pred_idx]*100:.02f}%')
-            st.write(f'ผลการทำนาย: **{pred}** ด้วยความมั่นใจ: {probs[pred_idx]*100:.02f}%')
-            st.write(f'You are currently use  {model} model')
+            st.subheader(f'Prediction: {pred} with Confidence: {probs[pred_idx]*100:.02f}%')
+            st.subheader(f'ผลการทำนาย: *{pred}** ด้วยความมั่นใจ: {probs[pred_idx]*100:.02f}%')
+            st.subheader(f'You are currently use  {model} model')
             st.balloons()
         #else: 
            # st.write(f'Click the button to classify') 
