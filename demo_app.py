@@ -35,6 +35,7 @@ class Predict:
             st.subheader(f'ผลการทำนาย: {pred} ด้วยความมั่นใจ: {probs[pred_idx]*100:.02f}%')
         #else: 
            # st.write(f'Click the button to classify') 
+        st.balloons()
 
 if __name__=='__main__':
 
@@ -48,5 +49,3 @@ st.text('Credit')
 st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
 st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
 st.text('A Capstone Project, Princess Chulabhorn Science High School Loei')
-
-st.balloons()
