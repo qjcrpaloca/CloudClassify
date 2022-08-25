@@ -9,6 +9,10 @@ import streamlit as st
 st.image('header2.jpg')
 st.header('Clouds Classification Demonstrate')
 
+model = st.radio(
+    'What MODEL do you want to use?',
+    ('Resnet50', 'MobileNet v3 small', 'VGG16 with batch normalization')
+)
 class Predict:
     def __init__(self, filename):
         self.learn_inference = load_learner(Path()/filename)
@@ -37,10 +41,7 @@ class Predict:
         #else: 
            # st.write(f'Click the button to classify') 
 
-model = st.radio(
-    'What MODEL do you want to use?',
-    ('Resnet50', 'MobileNet v3 small', 'VGG16 with batch normalization')
-)
+
 if model == 'Resnet50':
     if __name__=='__main__':
         st.write('You are currently use Resnet50 model')
