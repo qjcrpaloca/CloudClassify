@@ -37,15 +37,11 @@ class Predict:
         #else: 
            # st.write(f'Click the button to classify') 
        
-
 if __name__=='__main__':
 
     resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
     predictor_resnet = Predict(resnet_model)
 
-<<<<<<< HEAD
-st.balloon()
-=======
 st.text('      ')
 st.text('      ')
 st.text('      ')
@@ -53,4 +49,3 @@ st.text('Credit')
 st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
 st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
 st.text('A Capstone Project, Princess Chulabhorn Science High School Loei')
->>>>>>> e0840e541826ee492127e10a3fe65087b123b45a
