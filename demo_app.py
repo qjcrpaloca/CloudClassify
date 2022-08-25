@@ -37,7 +37,7 @@ class Predict:
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.subheader(f'Prediction: *{pred}* with Confidence: *{probs[pred_idx]*100:.02f}*%')
             st.subheader(f'ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%')
-            st.subheader(f'You are currently use *{model}* model')
+            st.subheader(f'You are currently use *{model}* model!')
             st.balloons()
         #else: 
            # st.write(f'Click the button to classify') 
@@ -45,17 +45,17 @@ class Predict:
 
 if model == 'Resnet50':
     if __name__=='__main__':
-        st.write('You are currently use Resnet50 model')
+        #st.write('You are currently use Resnet50 model')
         resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
         predictor_resnet = Predict(resnet_model)
 elif model == 'MobileNet v3 small':
     if __name__=='__main__':
-        st.write('You are currently use MobilenetV3 model')
+        #st.write('You are currently use MobilenetV3 model')
         mobilenet_model ='CloudClassification_mobilenetv3_v1.pkl'
         predictor_mobilenet = Predict(mobilenet_model)
 else:
     if __name__=='__main__':
-        st.write('You are currently use VGG16 model')
+        #st.write('You are currently use VGG16 model')
         vgg16_model ='CloudClassification_vgg16_v2.pkl'
         predictor_vgg16 = Predict(vgg16_model)
 
