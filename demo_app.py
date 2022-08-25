@@ -19,7 +19,7 @@ class Predict:
     
     @staticmethod
     def get_image_from_upload():
-        uploaded_file = st.file_uploader("Upload Cloud Image",type=['png','jpeg', 'jpg'])
+        uploaded_file = st.file_uploader("Upload or Take a Cloud Image",type=['png','jpeg', 'jpg'])
         if uploaded_file is not None:
             return PILImage.create((uploaded_file))
         return None
@@ -29,15 +29,28 @@ class Predict:
 
     def get_prediction(self):
 
-        if st.button('Click the button to Classify'):
+        if st.button('Click here! to Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
-            st.subheader(f'Prediction: {pred}; Probability: {probs[pred_idx]*100:.02f} %')
+            st.subheader(f'Prediction: {pred} with Confidence: {probs[pred_idx]*100:.02f}%')
+            st.subheader(f'ผลการทำนาย: {pred} ด้วยความมั่นใจ: {probs[pred_idx]*100:.02f}%')
+            st.balloons()
         #else: 
            # st.write(f'Click the button to classify') 
+       
 
 if __name__=='__main__':
 
     resnet_model ='CloudClassification_resnet50_v1 (1).pkl'
     predictor_resnet = Predict(resnet_model)
 
+<<<<<<< HEAD
 st.balloon()
+=======
+st.text('      ')
+st.text('      ')
+st.text('      ')
+st.text('Credit')
+st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
+st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
+st.text('A Capstone Project, Princess Chulabhorn Science High School Loei')
+>>>>>>> e0840e541826ee492127e10a3fe65087b123b45a
