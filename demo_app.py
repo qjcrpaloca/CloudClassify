@@ -6,7 +6,7 @@ import pathlib
 #pathlib.PosixPath = pathlib.WindowsPath
 import streamlit as st
 
-st.image('header2.jpg')
+st.image('Header.png')
 st.header('Clouds Classification Demonstrate')
 
 model = st.radio(
