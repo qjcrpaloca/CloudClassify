@@ -38,6 +38,10 @@ class Predict:
             st.subheader(f'Prediction: *{pred}* with Confidence: *{probs[pred_idx]*100:.02f}*%')
             st.subheader(f'ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%')
             st.subheader(f'You are currently use *{model}* model!')
+
+            if pred == 'Cirrus' :
+                st.image('Ci.jpg')
+
             st.balloons()
         #else: 
            # st.write(f'Click the button to classify') 
