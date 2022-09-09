@@ -40,7 +40,7 @@ class Predict:
             st.subheader(f'You are currently use *{model}* model!')
 
             if pred == 'Cirrus' :
-                st.image('Ci.jpg')
+                st.image('Ci.png')
 
             st.balloons()
         #else: 
