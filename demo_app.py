@@ -41,6 +41,24 @@ class Predict:
 
             if pred == 'Cirrus' :
                 st.image('Ci.png')
+            elif pred == 'Cirrocumulus' :
+                st.image('Cc.png')
+            elif pred == 'Cirrostratus' :
+                st.image('Cs.png')
+            elif pred == 'Altostratus' :
+                st.image('As.png')
+            elif pred == 'Altocumulus' :
+                st.image('Ac.png')
+            elif pred == 'Nimbostratus' :
+                st.image('Nb.png')
+            elif pred == 'Cumulus' :
+                st.image('Cu.png')
+            elif pred == 'Cumulonimbus' :
+                st.image('Cb.png')
+            elif pred == 'Cumulus' :
+                st.image('Cu.png')
+            else :
+                st.image('Sc.png')
 
             st.balloons()
         #else: 
