@@ -36,7 +36,7 @@ class Predict:
         if st.button('Click here! to Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.subheader(f'Prediction: *{pred}* with Confidence: *{probs[pred_idx]*100:.02f}*%')
-            st.subheader(f'ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%')
+            #st.subheader(f'ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%')
             st.subheader(f'You are currently use *{model}* model!')
 
             if pred == 'Cirrus' :
