@@ -35,13 +35,10 @@ class Predict:
 
         if st.button('Click here! to Classify'):
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
-            st.markdown(
-            """
-            <text style="font-size: 32px;font-family:'Sarabun', sans-serif;font-weight: bold;">Prediction: *{pred}* with Confidence: *{probs[pred_idx]*100:.02f}*%</text>
-            <text style="font-size: 32px;font-family: 'Sarabun', sans-serif;font-weight: bold;">ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%</text><br>
-            <text style="font-size: 30px;font-family: 'Sarabun', sans-serif;font-weight: bold;padding:0px 0px 0px 60px">You are currently use *{model}* model!</text>
-            """
-            ,unsafe_allow_html=True)
+            st.subheader(f'Prediction: *{pred}* with Confidence: *{probs[pred_idx]*100:.02f}*%')
+            st.subheader(f'ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%')
+            #st.subheader(f'ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%')
+            st.subheader(f'You are currently use *{model}* model!')
     
             if pred == 'Cirrus' :
                 st.image('Ci.png')
