@@ -37,8 +37,8 @@ class Predict:
             pred, pred_idx, probs = self.learn_inference.predict(self.img)
             st.markdown(
             """
-            <text style="font-size: 60px;font-family:'Sarabun', sans-serif;font-weight: bold;">Prediction: *{pred}* with Confidence: *{probs[pred_idx]*100:.02f}*%</text>
-            <text style="font-size: 30px;font-family: 'Sarabun', sans-serif;font-weight: bold;">ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%</text><br>
+            <text style="font-size: 32px;font-family:'Sarabun', sans-serif;font-weight: bold;">Prediction: *{pred}* with Confidence: *{probs[pred_idx]*100:.02f}*%</text>
+            <text style="font-size: 32px;font-family: 'Sarabun', sans-serif;font-weight: bold;">ผลการทำนาย: *{pred}* ด้วยความมั่นใจ: *{probs[pred_idx]*100:.02f}*%</text><br>
             <text style="font-size: 30px;font-family: 'Sarabun', sans-serif;font-weight: bold;padding:0px 0px 0px 60px">You are currently use *{model}* model!</text>
             """
             ,unsafe_allow_html=True)
@@ -85,23 +85,7 @@ else:
         vgg16_model ='CloudClassification_vgg16_v2.pkl'
         predictor_vgg16 = Predict(vgg16_model)
 
-def sidebar_about():
-    with st.sidebar:
-        st.markdown('<bighead>About this project</bighead>', unsafe_allow_html=True)
-        a,b,c,d,e,f = st.columns(6)
-        st.write('Organized by')
-        a.image('Non.png', caption='Patompomg Oupapong')
-        b.image('Kongtap.png', caption='Pannawit Wantae')
-        c.image('F.png', caption='Pongsapat Suporn')
-        d.image('Non.png', caption='Songkran Buttawong')
-        e.image('Non.png', caption='Suthut Butchanon')
-        st.markdown('<text style=\'font-size:14px;\'>A capstone project</a> Princess Culabhorn Science High School Loei</text>',unsafe_allow_html=True)
 
-
-        st.markdown('<bighead>Contact</bighead>', unsafe_allow_html=True)
-        st.markdown('<text>pannawit04149@pcshsloei.ac.th</text>', unsafe_allow_html=True)
-sidebar_about()
-"""
 st.text('      ')
 st.text('      ')
 st.text('      ')
@@ -109,4 +93,3 @@ st.text('Credit')
 st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
 st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
 st.text('A Capstone Project, Princess Chulabhorn Science High School Loei')
-"""
