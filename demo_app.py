@@ -55,8 +55,8 @@ class Predict:
                 st.image('Cu.png')
             elif pred == 'Cumulonimbus' :
                 st.image('Cb.png')
-            elif pred == 'Cumulus' :
-                st.image('Cu.png')
+            elif pred == 'Stratus' :
+                st.image('St.png')
             else :
                 st.image('Sc.png')
 
