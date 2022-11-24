@@ -2,7 +2,6 @@ import fastai
 #from fastai.vision.widgets import *
 #from fastai.vision.all import *
 from fastai import *
-from fastai import load_learner
 
 import pathlib
 #pathlib.PosixPath = pathlib.WindowsPath
