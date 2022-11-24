@@ -1,6 +1,6 @@
 import fastai
-#from fastai.vision.widgets import *
-#from fastai.vision.all import *
+from fastai.vision.widgets import *
+from fastai.vision.all import *
 from fastai import *
 
 import pathlib
