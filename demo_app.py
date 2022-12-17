@@ -86,7 +86,7 @@ else:
 st.text('      ')
 st.text('      ')
 st.text('      ')
-st.text('**Credit**')
+#st.text('Credit')
 st.text('[developers] Patompong Oupapong, Pannawit Wantae, Pongsapat Suporn')
 st.text('[advisors] Songkran Buttawong, Suthut Butchanon')
 st.text('[special advisors] Pathapong Pongpatrakant')
